@@ -24,8 +24,8 @@
 
           # Run when the shell is started up
           shellHook = with pkgs; ''
-            						MY_VARIABLE=moo
-                        echo " `${cowsay}/bin/cowsay $MY_VARIABLE`"
+              MY_VARIABLE=moo
+              echo " `${cowsay}/bin/cowsay $MY_VARIABLE`"
           '';
         };
       });
