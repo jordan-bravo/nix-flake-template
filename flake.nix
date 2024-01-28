@@ -4,7 +4,7 @@
   # URLs for the Nix inputs to use
   inputs = {
     # The largest repository of Nix packages
-    nixpkgs.url = "github:NixOS/nixpkgs";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     # Helper functions for using flakes
     flake-utils.url = "github:numtide/flake-utils";
   };
