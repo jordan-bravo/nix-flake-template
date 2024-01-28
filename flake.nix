@@ -22,10 +22,14 @@
             hello
           ];
 
+          # Environment variables can be set here
+          MY_VARIABLE = "moo";
+
           # Run when the shell is started up
           shellHook = with pkgs; ''
-              MY_VARIABLE=moo
               echo " `${cowsay}/bin/cowsay $MY_VARIABLE`"
+              echo "You are now in a Nix development shell."
+              echo "You can exit with the 'exit' command."
           '';
         };
       });
